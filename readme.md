@@ -5,7 +5,7 @@ This is not the same as [Aero Snap](https://en.wikipedia.org/wiki/Windows_Aero#W
 
 This demo window will snap its borders to the desktop edges and to the edges of other windows when moved or resized at a distance of 30 pixels or less.
 
-To temporarily move or resize the demooo window without snapping, pulse a SHIFT key at the same time.
+To temporarily move or resize the demo window without snapping, pulse a SHIFT key at the same time.
 
 To disable the snapping behavior for some larger time, use the menu option Effect->Snapping.
 
@@ -16,7 +16,7 @@ This is an incomplete list of other Windows programs implementing sticky window 
 
 * [Winamp](https://www.winamp.com/)
 
-This program, published in the nineties of the past century was the first one including the sticky window snapping feature, and was very influential not only for that, but also was one of the earlier MP3 players that contributed to the digital media revolution that shaked the recording industry. 
+This program, published in the nineties of the past century was the first one including the sticky window snapping feature, and was very influential not only for that, but also was one of the earlier MP3 players that contributed to the digital media revolution that shacked the recording industry. 
 
 * [VanBasco Karaoke Player](http://www.vanbasco.com/en/karaokeplayer/)
 
