@@ -30,6 +30,19 @@ if(NOT WIN32)
     message(FATAL_ERROR "This project is for Windows!")
 endif()
 
+include(CheckCXXSourceCompiles)
+check_cxx_source_compiles("#include <Windows.h>
+    int main()
+    {
+        EnumWindows([](HWND, LPARAM) -> BOOL { return true; }, 0);
+        return 0;
+    }" COMPILER_SUPPORTED
+)
+
+if (NOT COMPILER_SUPPORTED)
+    message(FATAL_ERROR "Sorry, your compiler is not supported: ${CMAKE_CXX_COMPILER}")
+endif()
+
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
