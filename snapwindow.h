@@ -3,7 +3,7 @@
 
 /*
  *  Sticky Window Snapping Demo for Qt and WIN32
- *  Copyright (C) 2021 Pedro López-Cabanillas <plcl@users.sourceforge.net>
+ *  Copyright (C) 2021-2023 Pedro López-Cabanillas <plcl@users.sourceforge.net>
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -32,8 +32,11 @@ public:
     SnapWindow(QWidget *parent = nullptr);
 
 protected:
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     bool nativeEvent(const QByteArray &eventType, void *message, long *result) override;
-
+#else
+    bool nativeEvent(const QByteArray &eventType, void *message, qintptr *result) override;
+#endif
 private:
 #if defined(Q_OS_WINDOWS)
     WinSnap m_snapper;
