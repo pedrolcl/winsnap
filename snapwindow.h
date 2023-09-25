@@ -3,7 +3,7 @@
 
 /*
  *  Sticky Window Snapping Demo for Qt and WIN32
- *  Copyright (C) 2021 Pedro López-Cabanillas <plcl@users.sourceforge.net>
+ *  Copyright (C) 2021-2023 Pedro López-Cabanillas <plcl@users.sourceforge.net>
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by

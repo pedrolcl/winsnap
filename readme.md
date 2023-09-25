@@ -41,10 +41,25 @@ Sticky Window Snapping is a standard feature of the KWin and Mutter window manag
 
 There are also 3rd party window managers for Windows that implement Sticky Window Snapping for all windows programs, but the user must find, buy and install one first. It is reasonable that some windows programs include this functionality without external helpers. This is not necessary in the case of macOS and Linux. 
 
+Cross-compiling from Linux
+--------------------------
+
+You may build this project from Linux using [MinGW](https://en.wikipedia.org/wiki/MinGW). You need to provide a toolchain file from the command line when running cmake, for instance:
+
+~~~
+$ cmake -S winsnap \
+        -B build-winsnap \
+        -DCMAKE_GENERATOR:STRING='Unix Makefiles' \
+        -DCMAKE_BUILD_TYPE:STRING=Debug \
+        -DCMAKE_TOOLCHAIN_FILE:FILEPATH=/usr/share/mingw/toolchain-mingw64.cmake
+~~~
+
+To run the program under Linux, use [Wine](https://www.winehq.org/).
+
 Credits and Licenses
 --------------------
 
-Copyright (C) 2021 Pedro López-Cabanillas <plcl@users.sourceforge.net>
+Copyright (C) 2021-2023 Pedro López-Cabanillas <plcl@users.sourceforge.net>
  
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
