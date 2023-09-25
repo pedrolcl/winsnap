@@ -32,8 +32,11 @@ public:
     SnapWindow(QWidget *parent = nullptr);
 
 protected:
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     bool nativeEvent(const QByteArray &eventType, void *message, long *result) override;
-
+#else
+    bool nativeEvent(const QByteArray &eventType, void *message, qintptr *result) override;
+#endif
 private:
 #if defined(Q_OS_WINDOWS)
     WinSnap m_snapper;

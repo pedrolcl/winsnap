@@ -9,6 +9,8 @@ To temporarily move or resize the demo window without snapping, pulse a SHIFT ke
 
 To disable the snapping behavior for some larger time, use the menu option Effect->Snapping.
 
+![screenshot](screenshot-windows.png)
+
 Antecedents
 -----------
 

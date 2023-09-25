@@ -47,8 +47,11 @@ SnapWindow::SnapWindow(QWidget *parent)
     "</body></html>");
     setCentralWidget(browser);
 }
-
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 bool SnapWindow::nativeEvent(const QByteArray &eventType, void *message, long *result)
+#else
+bool SnapWindow::nativeEvent(const QByteArray &eventType, void *message, qintptr *result)
+#endif
 {
 #if defined(Q_OS_WINDOWS)
     if (m_snapper.HandleMessage(message)) {
