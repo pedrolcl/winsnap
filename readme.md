@@ -56,6 +56,8 @@ $ cmake -S winsnap \
 
 To run the program under Linux, use [Wine](https://www.winehq.org/).
 
+![screenshot](screenshot-wine.png)
+
 Credits and Licenses
 --------------------
 
