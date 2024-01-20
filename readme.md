@@ -16,7 +16,7 @@ Antecedents
 
 This is an incomplete list of other Windows programs implementing sticky window snapping.
 
-* [Winamp](https://www.winamp.com/)
+* [Winamp](https://en.wikipedia.org/wiki/Winamp)
 
 This program, published in the nineties of the past century was the first one including the sticky window snapping feature, and was very influential not only for that, but also was one of the earlier MP3 players that contributed to the digital media revolution that shacked the recording industry. 
 

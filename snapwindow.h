@@ -37,6 +37,7 @@ protected:
 #else
     bool nativeEvent(const QByteArray &eventType, void *message, qintptr *result) override;
 #endif
+
 private:
 #if defined(Q_OS_WINDOWS)
     WinSnap m_snapper;
